@@ -1,0 +1,154 @@
+@import "./scroll";
+@import "./login";
+@import "./header";
+@import "./Upload";
+@import "./DataDetailFrom";
+@import "./common";
+
+#root {
+  height: 100%;
+}
+
+.ant-layout {
+  height: 100%;
+  .logo {
+    height: 65px;
+    padding: 15px 20px;
+    background-color: #404040;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .ant-layout-sider-collapsed {
+    .anticon {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+    .nav-text {
+      display: none;
+    }
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+      display: none;
+    }
+  }
+  p {
+    margin: 10px 0 10px 0;
+  }
+}
+
+.gutter-example {
+  .ant-row {
+    //margin-left: 0 !important;
+    //margin-right: 0 !important;
+    > div {
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+
+.gutter-box {
+  padding: 5px 0;
+}
+
+.ant-menu-inline .ant-menu-item:after, .ant-menu-vertical .ant-menu-item:after {
+  border-left: 4px solid #ffffff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  text-align: center;
+  color: #999999;
+  padding-top: 30px;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #2b2b2b !important;
+}
+
+.ant-layout-footer {
+  padding: 8px 50px;
+}
+
+//表格td>span的通用样式
+.ant-table-tbody > tr > td > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//在非Firefox浏览器中2行文本溢出加...
+.ant-table-tbody > tr > td > span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
+//在Firefox浏览器中单行文本溢出
+.ant-table-tbody > tr > td > span {
+  display: -moz-box;
+}
+
+.ant-form-item-label, .ant-form-item-control {
+  line-height: normal !important;
+}
+
+.dynamic-delete-button {
+  font-size: 20px !important;
+}
+
+.seedsUrl:hover {
+  text-decoration: underline;
+}
+
+.ant-badge-status-dot {
+  width: 7px !important;
+  height: 7px !important;
+  margin-left: 3px !important;
+}
+
+.ant-badge-status-default {
+  background-color: #108ee9 !important;
+}
+
+.ant-badge-status-processing {
+  background-color: #00a854 !important;
+}
+
+.ant-badge-status-processing:after {
+  border: 1px solid #00a854 !important;
+}
+
+.ant-table-row-expand-icon {
+  display: inline-block !important;
+}
+
+.backToFirstLevelTable {
+  cursor: pointer;
+  color: #108ee9;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.ant-input-number, .ant-input-search {
+  width: 200px !important;
+}
+.highlight {
+  color: #e4393c;
+}
+.optional {
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+  line-height: 35px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 50%;
+}
+.prompt-red {
+  color: #e4393c;
+}
